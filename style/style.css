@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: ".Oswald";
+}
+
+.title {
+  font-family: "Oswald";
+}
+
+.card__text {
+  font-family: "Pachom";
+}
+
+@font-face {
+  font-family: "Pachom";
+  src: url("../../fonts/pachom.woff2") format("woff2"), url("../../fonts/pachom.woff") format("woff");
+}/*# sourceMappingURL=style.css.map */
