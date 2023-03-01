@@ -1,18 +1,134 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: ".Oswald";
+  font-family: "Oswald";
+}
+
+button {
+  border: none;
+}
+
+.container {
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0px 20px 20px #062d24;
+  background-color: #e1e1e1;
+}
+.container__head {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.background {
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.header {
+  background-color: #205f51;
+  box-shadow: 0px 0px 20px #646970;
 }
 
 .title {
+  max-width: 200px;
   font-family: "Oswald";
+  font-size: 30px;
+  line-height: 120%;
+  color: #fff;
+  text-align: center;
+  padding: 16px 0;
+  background-color: #062d24;
 }
 
 .card__text {
   font-family: "Pachom";
 }
+.card__info {
+  height: 100%;
+  padding: 10px;
+}
+.card__buttons {
+  width: 100%;
+  display: flex;
+}
+.card__button__help {
+  width: 50%;
+  color: #205f51;
+  font-size: 16px;
+  transition: 0.3s;
+  border: 1px solid #205f51;
+}
+.card__button__help:hover {
+  color: #fff;
+  background-color: #205f51;
+}
+.card__button__replace {
+  width: 50%;
+  color: #890a0a;
+  font-size: 16px;
+  border: 1px solid #890a0a;
+}
+.card__button__replace:hover {
+  color: #fff;
+  background-color: #890a0a;
+}
+.card__button__answer {
+  width: 100%;
+  color: #205f51;
+  font-size: 16px;
+  border: 1px solid #205f51;
+  border-top: none;
+}
+.card__button__answer:hover {
+  color: #fff;
+  background-color: #205f51;
+}
 
 @font-face {
   font-family: "Pachom";
   src: url("../../fonts/pachom.woff2") format("woff2"), url("../../fonts/pachom.woff") format("woff");
+}
+.theme {
+  padding: 20px 16px;
+  color: #fff;
+  transition: 0.3s;
+  width: 168px;
+  font-size: 20px;
+}
+.theme:hover {
+  background-color: #890a0a;
+}
+
+.myst {
+  display: flex;
+  height: 100%;
+}
+.myst__select {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background-color: #205f51;
+}
+.myst__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.myst__section {
+  gap: 65px;
+  height: -moz-max-content;
+  height: max-content;
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+}
+.myst__card {
+  height: 300px;
+  width: 235px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #fccff1;
+  background-color: #fff;
 }/*# sourceMappingURL=style.css.map */
