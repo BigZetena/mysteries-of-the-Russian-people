@@ -9,7 +9,7 @@ button {
 }
 
 .container {
-  height: 100vh;
+  min-height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
   box-shadow: 0px 20px 20px #062d24;
@@ -21,7 +21,6 @@ button {
 }
 
 .background {
-  height: 100vh;
   background-color: #ffffff;
 }
 
@@ -41,12 +40,24 @@ button {
   background-color: #062d24;
 }
 
+@media (max-width: 450px) {
+  .title {
+    max-width: 340px;
+  }
+  .header {
+    background-color: #062d24;
+  }
+}
 .card__text {
   font-family: "Pachom";
 }
 .card__info {
   height: 100%;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 .card__buttons {
   width: 100%;
@@ -62,6 +73,12 @@ button {
 .card__button__help:hover {
   color: #fff;
   background-color: #205f51;
+}
+.card__button__help__show {
+  color: #fff;
+  background-color: #205f51;
+  width: 50%;
+  font-size: 16px;
 }
 .card__button__replace {
   width: 50%;
@@ -83,6 +100,47 @@ button {
 .card__button__answer:hover {
   color: #fff;
   background-color: #205f51;
+}
+.card__button__answer__show {
+  font-family: "Pachom";
+  color: #fff;
+  background-color: #205f51;
+  text-align: center;
+  font-size: 22px;
+  height: 40px;
+  padding-top: 10px;
+}
+.card__input {
+  width: 70%;
+  border: none;
+  border-bottom: 1px solid #205f51;
+  text-align: center;
+}
+.card__input:focus {
+  outline: none;
+  border-bottom: 1px solid #890a0a;
+  box-shadow: 2px 2px 5px #c8b8b8;
+}
+.card__win__div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #205f51;
+}
+.card__win__text {
+  font-family: "Pachom";
+  color: #fff;
+  font-size: 35px;
+}
+.card__fail__div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #890a0a;
 }
 
 @font-face {
@@ -109,8 +167,10 @@ button {
   flex-direction: column;
   width: 200px;
   background-color: #205f51;
+  min-height: 100vh;
 }
 .myst__wrapper {
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -131,4 +191,24 @@ button {
   justify-content: space-between;
   border: 1px solid #fccff1;
   background-color: #fff;
+}
+
+@media (max-width: 1075px) {
+  .myst__section {
+    grid-template-columns: repeat(2, 3fr);
+  }
+}
+@media (max-width: 770px) {
+  .myst__section {
+    grid-template-columns: repeat(1, 3fr);
+  }
+}
+@media (max-width: 450px) {
+  .myst__select {
+    width: 100px;
+  }
+  .theme {
+    font-size: 16px;
+    padding: 10px 8px;
+  }
 }/*# sourceMappingURL=style.css.map */

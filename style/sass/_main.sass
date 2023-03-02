@@ -16,7 +16,9 @@
         flex-direction: column
         width: 200px
         background-color: #205f51
+        min-height: 100vh
     &__wrapper
+        height: 100%
         width: 100%
         display: flex
         justify-content: space-around    
@@ -35,3 +37,17 @@
         border: 1px solid #fccff1
         background-color: #fff
         
+@media (max-width: 1075px)
+    .myst__section
+        grid-template-columns: repeat(2, 3fr)
+
+@media (max-width: 770px)
+    .myst__section
+        grid-template-columns: repeat(1, 3fr)        
+
+@media (max-width: 450px)        
+    .myst__select
+        width: 100px
+    .theme
+        font-size: 16px
+        padding: 10px 8px
