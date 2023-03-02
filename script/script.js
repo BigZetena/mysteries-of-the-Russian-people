@@ -78,7 +78,7 @@ function drowCard(arr, card, id) {
   card.innerHTML = `
   <div class="card__info">
      <p class="card__text">${arr[id].text}</p>
-     <input type="text" class="card__input" placeholder = "Введите ответ">
+     <input type="text" class="card__input" placeholder = "Введите ответ" tabindex="-1">
     </div>
    <div class="card_navigation">
       <div class="card__buttons">

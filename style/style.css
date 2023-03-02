@@ -163,6 +163,8 @@ button {
   height: 100%;
 }
 .myst__select {
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: column;
   width: 200px;
