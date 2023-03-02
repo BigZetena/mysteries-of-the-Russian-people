@@ -104,7 +104,8 @@ function drowCard(arr, card, id) {
   answer.addEventListener("click", () =>
     showAnswer(arr, id, cardButtons, card)
   );
-  input.addEventListener("change", () => {
+  input.addEventListener("change", (event) => {
+    event.preventDefault();
     if (input.value.toLowerCase() === arr[id].answer) {
       card.innerHTML = `<div class="card__win__div">
             <p class="card__win__text">Умница!</p>
