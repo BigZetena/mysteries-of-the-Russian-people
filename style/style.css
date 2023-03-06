@@ -108,7 +108,7 @@ button {
   background-color: #205f51;
   text-align: center;
   font-size: 22px;
-  height: 40px;
+  height: 41px;
   padding-top: 10px;
 }
 .card__input {
@@ -197,10 +197,15 @@ button {
 }
 .myst__counter {
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(136, 255, 138, 0.5);
   font-weight: 600;
 }
 .myst__fail {
+  font-size: 16px;
+  color: rgba(255, 89, 89, 0.5);
+  font-weight: 600;
+}
+.myst__branch {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.5);
   font-weight: 600;
